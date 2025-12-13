@@ -32,19 +32,20 @@ export default async function RootLayout({ children }) {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="mobile-web-app-capable" content="yes" />
       </head>
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <Header />
-            <div className="min-h-screen">
-              {" "}
-              <WhatsAppChat /> {children}
-            </div>
-            <Footer />
-          </ThemeProvider>
-          <Analytics />
-        </body>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Header />
+          <div className="min-h-screen">
+            {" "}
+            <WhatsAppChat />
+            {children}
+          </div>
+          <Footer />
+        </ThemeProvider>
+        <Analytics />
+      </body>
     </html>
   );
 }

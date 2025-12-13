@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "baseline-browser-mapping": "^2.9.7",
     "case-sensitive-paths-webpack-plugin": "^2.4.0",
     "tailwindcss": "^4"
   }
