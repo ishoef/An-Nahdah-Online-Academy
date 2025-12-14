@@ -122,7 +122,7 @@ export default function ContactPageAOI() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-6"
           >
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 space-y-6">
+            <div className="bg-white dark:bg-gray-800 h-full rounded-2xl shadow-xl p-8 space-y-6">
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
                 Contact Information
               </h3>
@@ -319,7 +319,7 @@ export default function ContactPageAOI() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full flex items-center justify-center gap-3 bg-[#206380] hover:bg-[#1a4f66] disabled:opacity-70 text-white py-5 rounded-xl font-semibold text-lg transition shadow-lg"
+                  className="cursor-pointer w-full flex items-center justify-center gap-3 bg-[#206380] hover:bg-[#1a4f66] disabled:opacity-70 text-white py-5 rounded-xl font-semibold text-lg transition shadow-lg"
                 >
                   {loading ? (
                     <>
@@ -359,7 +359,7 @@ export default function ContactPageAOI() {
             <div key={index} className="border rounded-xl">
               <button
                 onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                className="cursor-pointer  w-full px-6 py-5 flex justify-between"
+                className="cursor-pointer w-full px-6 py-5 flex justify-between"
               >
                 {faq.question}
                 <ChevronDown
@@ -367,7 +367,7 @@ export default function ContactPageAOI() {
                 />
               </button>
               {openFaq === index && (
-                <div className="px-6 pb-5">{faq.answer}</div>
+                <div className="border-t px-6 py-5">{faq.answer}</div>
               )}
             </div>
           ))}
