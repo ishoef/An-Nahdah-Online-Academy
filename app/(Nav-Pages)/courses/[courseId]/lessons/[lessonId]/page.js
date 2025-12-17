@@ -110,7 +110,7 @@ export default function LessonPage() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
-      <div className="max-w-7xl mx-auto p-4 md:p-8">
+      <div className="max-w-10/12 mx-auto p-4 md:p-8">
         <header className="flex items-center justify-between mb-6">
           <div>
             <h1 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-gray-100">
@@ -162,31 +162,6 @@ export default function LessonPage() {
                 {/* responsive 16:9 */}
 
                 {/* Video Frame */}
-                {/* <div
-                  className="relative w-full"
-                  style={{ paddingTop: "56.25%" }}
-                >
-                  {isYoutube ? (
-                    <iframe
-                      title="lesson-video"
-                      src={videoURL}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className="absolute inset-0 w-full h-full"
-                      style={{ border: "none" }}
-                    />
-                  ) : (
-                    <video
-                      ref={videoRef}
-                      src={videoURL}
-                      poster={thumbnail}
-                      controls
-                      playsInline
-                      className="absolute inset-0 w-full h-full bg-black"
-                    />
-                  )}
-                </div> */}
-
                 <CustomVideoFrame isYoutube={true} videoUrl={videoURL} />
 
                 {/* <div className="absolute left-4 top-4 bg-white/10 text-white text-xs rounded-full px-3 py-1 backdrop-blur">

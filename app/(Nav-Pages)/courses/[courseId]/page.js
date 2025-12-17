@@ -4,6 +4,7 @@ import Link from "next/link";
 import allData from "../../../../jsons/courses.json";
 
 import TabsSection from "@/components/courseDetails-components/TabsSection";
+import TeacherCard from "@/components/teachers-components/teacherCard";
 
 export function generateStaticParams() {
   return allData.allCourses.map((course) => ({
@@ -161,14 +162,16 @@ export default async function CourseDetails({ params }) {
 
       {/* MAIN CONTENT */}
       <main className="max-w-7xl mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <div className="lg:col-span-2">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+          {/* LEFT: MAIN CONTENT */}
+          <div className="lg:col-span-2 flex flex-col h-full">
             {/* Tabs */}
-
             <TabsSection course={course} />
+
             {/* Reviews */}
             <div className="mt-6 bg-white dark:bg-slate-800 rounded-xl p-4 border dark:border-slate-700">
               <h3 className="font-semibold">Student Reviews</h3>
+
               <div className="mt-3 space-y-3">
                 <div className="p-3 rounded-md bg-slate-50 dark:bg-slate-900 border dark:border-slate-700">
                   <div className="flex items-center justify-between">
@@ -180,6 +183,7 @@ export default async function CourseDetails({ params }) {
                     </div>
                     <div className="text-sm">⭐ 5.0</div>
                   </div>
+
                   <p className="mt-2 text-sm text-slate-700 dark:text-slate-300">
                     Great explanations and practical examples. Highly
                     recommended for serious students.
@@ -189,28 +193,30 @@ export default async function CourseDetails({ params }) {
             </div>
           </div>
 
-          {/* SIDEBAR ON LARGE SCREENS */}
-          <aside className="hidden lg:block">
+          {/* RIGHT: SIDEBAR (DESKTOP ONLY) */}
+          <aside className="hidden lg:flex flex-col h-full">
+            {/* Course Info */}
             <div className="bg-white dark:bg-slate-800 rounded-xl p-4 border dark:border-slate-700">
               <h4 className="font-semibold">Course Info</h4>
-              <div className="mt-2 text-sm text-slate-700 dark:text-slate-300">
+
+              <div className="mt-2 text-sm text-slate-700 dark:text-slate-300 space-y-2">
                 <div className="flex justify-between">
                   <span>Level</span>
                   <span className="font-medium">Intermediate</span>
                 </div>
-                <div className="flex justify-between mt-2">
+                <div className="flex justify-between">
                   <span>Duration</span>
                   <span className="font-medium">12 weeks</span>
                 </div>
-                <div className="flex justify-between mt-2">
+                <div className="flex justify-between">
                   <span>Language</span>
                   <span className="font-medium">English & Arabic</span>
                 </div>
-                <div className="flex justify-between mt-2">
+                <div className="flex justify-between">
                   <span>Last Updated</span>
                   <span className="font-medium">January 2025</span>
                 </div>
-                <div className="flex justify-between mt-2">
+                <div className="flex justify-between">
                   <span>Students</span>
                   <span className="font-medium">2,450</span>
                 </div>
@@ -218,32 +224,40 @@ export default async function CourseDetails({ params }) {
 
               <div className="mt-4">
                 <Link
-                  href={"/checkout"}
-                  className="cursor-pointer mt-4 w-full inline-flex items-center justify-center rounded-lg py-2 bg-[#206380] text-white hover:bg-[#225168]"
+                  href="/checkout"
+                  className="w-full inline-flex items-center justify-center rounded-lg py-2 bg-[#206380] text-white hover:bg-[#225168] transition-colors"
                 >
                   Enroll Now
                 </Link>
               </div>
             </div>
 
+            {/* Share Course */}
             <div className="mt-4 p-4 bg-white dark:bg-slate-800 rounded-xl border dark:border-slate-700">
               <h4 className="font-semibold">Share This Course</h4>
+
               <div className="mt-2 flex gap-2">
-                <button className="flex-1 py-2 rounded-md border hover:bg-[#1877f2] hover:text-white cursor-pointer transition-all ">
+                <button className="flex-1 py-2 rounded-md border hover:bg-[#1877f2] hover:text-white transition-all">
                   Facebook
                 </button>
-                <button className="flex-1 py-2 rounded-md border hover:bg-[#0088cc] hover:text-white cursor-pointer transition-all ">
+                <button className="flex-1 py-2 rounded-md border hover:bg-[#0088cc] hover:text-white transition-all">
                   Telegram
                 </button>
               </div>
+
               <div className="mt-2 flex gap-2">
-                <button className="flex-1 py-2 rounded-md border hover:bg-[#25d366] hover:text-white cursor-pointer transition-all ">
+                <button className="flex-1 py-2 rounded-md border hover:bg-[#25d366] hover:text-white transition-all">
                   Whatsapp
                 </button>
-                <button className="flex-1 py-2 rounded-md border hover:bg-[#0a66c2] hover:text-white cursor-pointer transition-all ">
+                <button className="flex-1 py-2 rounded-md border hover:bg-[#0a66c2] hover:text-white transition-all">
                   Linkedin
                 </button>
               </div>
+            </div>
+
+            {/* Instructor (PUSHED TO BOTTOM) */}
+            <div className="mt-auto pt-4">
+              <TeacherCard instructor={instructor} />
             </div>
           </aside>
         </div>
