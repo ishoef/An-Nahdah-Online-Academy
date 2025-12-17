@@ -16,6 +16,7 @@ const navItems = [
   { name: "Courses", href: "/courses" },
   { name: "Instructors", href: "/instructors" },
   { name: "Contact", href: "/contact" },
+  { name: "books", href: "/books" },
 ];
 
 const Header = () => {

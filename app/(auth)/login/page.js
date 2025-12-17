@@ -35,7 +35,6 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex bg-background text-foreground">
       {/* Left Side - Visual Element (Desktop Only) */}
-      {/* Left Side - Visual Element (Desktop Only) */}
       <div className="hidden lg:block lg:w-1/2 relative h-screen overflow-hidden rounded-tr-3xl rounded-br-3xl">
         <Image
           src="https://images.unsplash.com/photo-1520262454473-a1a82276a574?w=1600&auto=format&fit=crop&q=80"
@@ -135,7 +134,7 @@ export default function LoginPage() {
                 <span className="text-foreground">Remember me</span>
               </label>
               <a
-                href="#"
+                href="/reset-password"
                 className="text-primary hover:text-primary/80 font-medium transition-colors"
               >
                 Forgot password?
