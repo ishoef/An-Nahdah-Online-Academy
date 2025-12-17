@@ -16,7 +16,7 @@ import {
 export default function CheckoutPage() {
   const [paymentMethod, setPaymentMethod] = useState("card");
   const [walletProvider, setWalletProvider] = useState("bkash");
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("ismailhossennayeb@gmail.com");
   const [promo, setPromo] = useState("");
   const [agree, setAgree] = useState(true);
   const [loading, setLoading] = useState(false);
@@ -62,7 +62,7 @@ export default function CheckoutPage() {
         }
       `}</style>
 
-      <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-nhd-50 dark:from-[#0b1720] dark:via-[#0f172a] dark:to-[#0b1f28] flex items-center justify-center px-4 py-12">
+      <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-teal-50 dark:from-slate-800 dark:via-slate-900 dark:to-slate-800 flex items-center justify-center px-4 py-12">
         {/* Background Blobs */}
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <div className="absolute top-20 -left-40 w-96 h-96 bg-nhd-700/5 rounded-full blur-3xl"></div>
@@ -73,7 +73,7 @@ export default function CheckoutPage() {
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Left: Checkout Form */}
             <div className="lg:col-span-2">
-              <div className="bg-white/90 dark:bg-[#0f172a]/95 backdrop-blur-xl rounded-3xl border border-gray-200/50 dark:border-gray-800 p-8">
+              <div className="bg-white/90 dark:bg-[#0f172a]/95 backdrop-blur-xl rounded-3xl border border-gray-200/50 dark:border-gray-800 p-8 shadow">
                 {/* Header */}
                 <div className="text-center mb-10">
                   <h1 className="text-3xl font-bold text-nhd-700 dark:text-nhd-100">
@@ -97,7 +97,7 @@ export default function CheckoutPage() {
                       A receipt has been sent to{" "}
                       <strong>{email || "your email"}</strong>
                     </p>
-                    <button className="mt-6 px-8 py-3 bg-nhd-700 text-white rounded-xl font-medium hover:bg-nhd-800 transition">
+                    <button className="cursor-pointer mt-6 px-8 py-3 bg-nhd-700 text-white rounded-xl font-medium hover:bg-nhd-800 transition">
                       Go to My Courses
                     </button>
                   </div>
@@ -137,14 +137,14 @@ export default function CheckoutPage() {
                             key={method.id}
                             type="button"
                             onClick={() => setPaymentMethod(method.id)}
-                            className={`flex flex-col items-center justify-center gap-2 py-4 rounded-xl border-2 transition-all ${
+                            className={`cursor-pointer flex flex-col items-center justify-center gap-2 py-4 rounded-xl border-2 transition-all ${
                               paymentMethod === method.id
                                 ? "border-nhd-700 bg-nhd-50 dark:bg-nhd-700/20"
                                 : "border-gray-200 dark:border-gray-700 hover:border-nhd-300"
                             }`}
                           >
-                            <method.icon className="w-6 h-6 text-nhd-700 " />
-                            <span className="text-sm font-medium text-nhd-700">
+                            <method.icon className="w-6 h-6 text-nhd-700 dark:text-white " />
+                            <span className="text-sm font-medium text-nhd-700 dark:text-white">
                               {method.label}
                             </span>
                           </button>
@@ -184,8 +184,9 @@ export default function CheckoutPage() {
                           {["bkash", "rocket", "nagad"].map((w) => (
                             <button
                               key={w}
+                              type="button"
                               onClick={() => setWalletProvider(w)}
-                              className={`px-5 py-3 rounded-lg font-medium capitalize transition ${
+                              className={`cursor-pointer px-5 py-3 rounded-lg font-medium capitalize transition ${
                                 walletProvider === w
                                   ? "bg-nhd-700 text-white"
                                   : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300"
@@ -231,7 +232,7 @@ export default function CheckoutPage() {
                         onClick={() =>
                           promo && alert(`Promo ${promo} applied! -$5`)
                         }
-                        className="px-6 py-3 bg-nhd-700 text-white rounded-xl font-medium hover:bg-nhd-800 transition"
+                        className="cursor-pointer px-6 py-3 bg-nhd-700 text-white rounded-xl font-medium hover:bg-nhd-800 transition"
                       >
                         Apply
                       </button>
@@ -247,11 +248,17 @@ export default function CheckoutPage() {
                       />
                       <span>
                         I agree to the{" "}
-                        <a href="#" className="underline text-nhd-700">
+                        <a
+                          href="#"
+                          className="underline text-nhd-700 dark:text-white"
+                        >
                           Terms of Service
                         </a>{" "}
                         and{" "}
-                        <a href="#" className="underline text-nhd-700">
+                        <a
+                          href="#"
+                          className="underline text-nhd-700 dark:text-white"
+                        >
                           Privacy Policy
                         </a>
                       </span>
@@ -261,7 +268,7 @@ export default function CheckoutPage() {
                     <button
                       type="submit"
                       disabled={loading || !agree}
-                      className="w-full py-4 px-6 rounded-xl bg-nhd-700 hover:bg-nhd-800 dark:bg-nhd-500 dark:hover:bg-nhd-600 text-white font-semibold text-lg  transform hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-3 disabled:opacity-60 disabled:cursor-not-allowed"
+                      className="cursor-pointer w-full py-4 px-6 rounded-xl bg-nhd-700 hover:bg-nhd-800 dark:bg-nhd-500 dark:hover:bg-nhd-600 text-white font-semibold text-lg  transform hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-3 disabled:opacity-60 disabled:cursor-not-allowed"
                     >
                       {loading ? (
                         <>Processing...</>
@@ -292,7 +299,7 @@ export default function CheckoutPage() {
 
             {/* Right: Order Summary */}
             <div className="lg:col-span-1">
-              <div className="bg-white/90 dark:bg-[#0f172a]/95 backdrop-blur-xl rounded-3xl border border-gray-200/50 dark:border-gray-800 p-6 sticky top-6">
+              <div className="bg-white/90 dark:bg-[#0f172a]/95 backdrop-blur-xl rounded-3xl border border-gray-200/50 dark:border-gray-800 p-6 sticky top-6 shadow">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                   Order Summary
                 </h3>
