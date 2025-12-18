@@ -6,7 +6,9 @@ const allCourses = courseData.allCourses;
 const CoursesPage = () => {
   return (
     <div className="bg-blue-100 dark:bg-gray-800">
-      <CourseHero />
+      <div className="hidden md:block">
+        <CourseHero />
+      </div>
       <CourseSection courses={allCourses} tabs={true} />
     </div>
   );

@@ -11,8 +11,9 @@ import {
   ArrowLeft,
 } from "lucide-react";
 import teachers from "@/jsons/teachers.json";
+import TeachersHero from "./TeachersHero";
 export default function TeachersGrid() {
-    const demoTeachers = teachers;
+  const demoTeachers = teachers;
 
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedDepartment, setSelectedDepartment] = useState("all");
@@ -55,22 +56,7 @@ export default function TeachersGrid() {
     <div className="min-h-screen bg-gradient-to-b from-background to-muted dark:from-gray-900 dark:to-gray-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-12">
         {/* Header */}
-        <div className="mb-8 sm:mb-12">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 dark:text-gray-300 dark:hover:text-gray-100 mb-6 font-medium transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to Home
-          </Link>
-          <h1 className="text-3xl text-nhd-950 sm:text-5xl font-bold mb-2 text-center dark:text-gray-100">
-            Our Teachers Directory
-          </h1>
-          <p className="sm:text-lg text-muted-foreground dark:text-gray-400 text-center">
-            Explore our complete collection of experienced and dedicated
-            educators
-          </p>
-        </div>
+        <TeachersHero />
 
         {/* Filters */}
         <div className="space-y-6 mb-12">
