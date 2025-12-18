@@ -83,7 +83,7 @@ export default function HeroZikr() {
       </div>
 
       {/* Bottom Stats Section */}
-      <div className="bg-[#b7e4f8] text-[#0b5f78] rounded-t-2xl">
+      <div className="bg-[#b7e4f8] text-[#0b5f78] rounded-t-4xl">
         <div className="mx-auto max-w-7xl px-6 py-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-5 items-start">
           {/* Text */}
           <div className="space-y-3 sm:col-span-2 text-center sm:text-left">
@@ -105,7 +105,7 @@ export default function HeroZikr() {
           ].map((item, i) => (
             <div
               key={i}
-              className="text-center bg-white/60 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-md transition"
+              className="text-center bg-white/80 backdrop-blur-md rounded-2xl p-6 shadow-sm hover:shadow-md transition"
             >
               <p className="text-3xl sm:text-4xl font-extrabold">
                 {item.value}
