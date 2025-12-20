@@ -68,8 +68,6 @@ const Header = () => {
             </Button>
           </Link>
 
-          <ThemeToggle />
-
           {/* Desktop Login */}
           {session && (
             <div className="hidden lg:flex">
@@ -97,6 +95,7 @@ const Header = () => {
               </Button>
             </div>
           )}
+          <ThemeToggle />
         </div>
       </div>
 

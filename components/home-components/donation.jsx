@@ -25,7 +25,7 @@ const Donation = () => {
             aria-label="Donate to support Islamic education"
             className="cursor-pointer px-6 py-3 bg-[#1f789b] hover:bg-[#206380] text-white text-lg rounded-md transition-colors"
           >
-            এখনই দান করুন
+            এখানে দান করুন
           </Link>
           <Link
             href="/impact"
