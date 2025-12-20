@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="space-y-6 w-full md:basis-2/3 text-center md:text-left">
           <h1 className="text-3xl font-bangla sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
             {/* Master Islam & Modern */}
-            পড়, তোমার প্রভুন নামে
+            পড়, তোমার প্রভুর নামে
             <br />
             <span className="text-nhd-300 dark:text-nhd-400">
               যিনি তোমাকে সৃষ্টি করেছেন{" "}
