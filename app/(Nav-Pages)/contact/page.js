@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import {
   Mail,
   Phone,
-  MapPin,
   Send,
   Loader2,
   CheckCircle,
@@ -15,9 +14,12 @@ import {
   Youtube,
   Twitter,
   Linkedin,
-  Globe,
   ChevronRight,
   ChevronDown,
+  HeadphonesIcon,
+  BookOpen,
+  Users,
+  Shield,
 } from "lucide-react";
 
 export default function ContactPageAOI() {
@@ -40,312 +42,258 @@ export default function ContactPageAOI() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-
-    // Simulate API request
     setTimeout(() => {
       setLoading(false);
       setSuccess(true);
       setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
-      setTimeout(() => setSuccess(false), 5000); // Auto-hide success after 5s
-    }, 1500);
+      setTimeout(() => setSuccess(false), 6000);
+    }, 1800);
   };
 
   const faqs = [
     {
-      question: "How do I enroll in a course?",
+      question: "কীভাবে কোর্সে ভর্তি হব?",
       answer:
-        "Visit our courses page, select your desired course, and follow the simple registration process. If you need assistance, contact our admissions team via email or phone.",
+        "কোর্স পেজে গিয়ে পছন্দের কোর্স নির্বাচন করুন এবং সহজ রেজিস্ট্রেশন প্রক্রিয়া অনুসরণ করুন। সহায়তার প্রয়োজন হলে আমাদের অ্যাডমিশন টিমের সাথে ইমেইল বা ফোনে যোগাযোগ করুন।",
     },
     {
-      question: "What are the admission requirements?",
+      question: "ভর্তির জন্য কী কী যোগ্যতা প্রয়োজন?",
       answer:
-        "Most courses have open enrollment. Some advanced programs may require prior knowledge or completion of prerequisite courses. Check individual course details for specifics.",
+        "অধিকাংশ কোর্স ওপেন এনরোলমেন্ট। কিছু উন্নত কোর্সের জন্য পূর্ববর্তী জ্ঞান বা প্রাক-প্রয়োজনীয় কোর্স সম্পন্ন করতে হতে পারে। বিস্তারিত জানতে নির্দিষ্ট কোর্সের পাতা দেখুন।",
     },
     {
-      question: "Are the courses self-paced or scheduled?",
+      question: "কোর্সগুলো সেল্ফ-পেসড নাকি নির্ধারিত সময়সূচীতে?",
       answer:
-        "We offer both self-paced and instructor-led scheduled courses. Many include live sessions, recorded lectures, and flexible deadlines to suit your schedule.",
+        "আমরা সেল্ফ-পেসড এবং লাইভ ইন্সট্রাক্টর-লেড উভয় ধরনের কোর্স অফার করি। অনেক কোর্সে লাইভ সেশন, রেকর্ডেড লেকচার এবং নমনীয় ডেডলাইন থাকে।",
     },
     {
-      question: "What technical requirements do I need?",
+      question: "প্রযুক্তিগতভাবে কী কী প্রয়োজন?",
       answer:
-        "A reliable internet connection, modern browser (Chrome/Firefox recommended), and a computer or tablet. Some courses may require a microphone/webcam for interactive sessions.",
+        "স্থিতিশীল ইন্টারনেট সংযোগ, আধুনিক ব্রাউজার (ক্রোম/ফায়ারফক্স সুপারিশকৃত) এবং কম্পিউটার বা ট্যাবলেট। কিছু ইন্টারঅ্যাকটিভ কোর্সে মাইক্রোফোন/ওয়েবক্যাম লাগতে পারে।",
     },
     {
-      question: "How do I access course materials?",
+      question: "কোর্স ম্যাটেরিয়াল কীভাবে পাব?",
       answer:
-        "After enrollment, you'll receive login credentials to our learning platform where all materials, videos, assignments, and forums are available 24/7.",
+        "ভর্তির পর আপনার লার্নিং প্ল্যাটফর্মে লগইন করুন। সব ভিডিও, অ্যাসাইনমেন্ট, ফোরাম এবং ম্যাটেরিয়াল ২৪/৭ উপলব্ধ থাকবে।",
     },
     {
-      question: "Is technical support available?",
+      question: "টেকনিক্যাল সাপোর্ট পাওয়া যায়?",
       answer:
-        "Yes! Our support team is available via email, phone, or live chat during business hours. We also have a comprehensive help center with guides and tutorials.",
+        "হ্যাঁ! আমাদের সাপোর্ট টিম ইমেইল, ফোন এবং লাইভ চ্যাটে সাহায্য করে। বিস্তারিত গাইড ও টিউটোরিয়ালসহ একটি হেল্প সেন্টারও আছে।",
     },
     {
-      question: "What payment methods do you accept?",
+      question: "কোন পেমেন্ট মেথড গ্রহণ করা হয়?",
       answer:
-        "We accept bKash, Nagad, Rocket, bank transfers, and major credit/debit cards. Installment options are available for select programs.",
+        "বিকাশ, নগদ, রকেট, ব্যাংক ট্রান্সফার এবং ক্রেডিট/ডেবিট কার্ড গ্রহণ করা হয়। নির্দিষ্ট প্রোগ্রামে কিস্তির সুবিধা আছে।",
     },
     {
-      question: "Do you offer certificates upon completion?",
+      question: "কোর্স শেষে সার্টিফিকেট দেওয়া হয়?",
       answer:
-        "Yes, all completed courses award a digital certificate. Verified certificates with institute seal are available for an additional fee.",
+        "হ্যাঁ, সব কোর্সে ডিজিটাল সার্টিফিকেট দেওয়া হয়। অতিরিক্ত ফি দিয়ে ইনস্টিটিউটের সিলসহ ভেরিফাইড সার্টিফিকেট ও ইজাযাহ পাওয়া যায়।",
     },
   ];
 
   return (
     <section className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900 px-6 py-20">
       <div className="max-w-7xl mx-auto space-y-16">
-        {/* Hero Header */}
+        {/* Hero Header - Smaller text */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center space-y-6"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center space-y-4"
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white">
-            Get in <span className="text-[#206380]">Touch</span> with AOI
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+            যোগাযোগ করুন <span className="text-[#206380]">আন-নাহদাহ</span>-এর
+            সাথে
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            We're here to answer your questions about courses, admissions,
-            technical support, or anything else. Our dedicated team responds
-            within 24 hours.
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            কোর্স, ভর্তি, টেকনিক্যাল সাপোর্ট বা যেকোনো প্রশ্নের জন্য আমরা আছি।
+            আমাদের টিম ২৪ ঘণ্টার মধ্যে উত্তর দেবে ইন শা আল্লাহ।
           </p>
         </motion.div>
 
-        {/* Contact Cards + Form Grid */}
-        <div className="grid lg:grid-cols-3 gap-10">
-          {/* Quick Contact Cards */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-6"
-          >
-            <div className="bg-white dark:bg-gray-800 h-full rounded-2xl shadow-xl p-8 space-y-6">
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
-                Contact Information
+        {/* Contact Info + Form */}
+        <div className="grid lg:grid-cols-3 gap-10 items-start">
+          {/* Left: Contact Cards */}
+          <div className="space-y-8 flex flex-col justify-between min-h-full">
+            {/* Contact Info Card */}
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+              className="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-200 dark:border-gray-700 flex-1"
+            >
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-7">
+                যোগাযোগের তথ্য
               </h3>
 
               <div className="space-y-5">
                 <a
-                  href="mailto:contact@an-nahdah.com"
+                  href="mailto:info@an-nahdah.com"
                   className="flex items-center gap-4 text-gray-700 dark:text-gray-300 hover:text-[#206380] transition"
                 >
-                  <Mail className="w-6 h-6 text-[#206380]" />
-                  <span>contact@an-nahdah.com</span>
+                  <div className="p-3 bg-[#206380]/10 rounded-xl">
+                    <Mail className="w-5 h-5 text-[#206380]" />
+                  </div>
+                  <span className="text-base">info@an-nahdah.com</span>
                 </a>
+
                 <a
-                  href="tel:+8801234567890"
+                  href="tel:+8809638111777"
                   className="flex items-center gap-4 text-gray-700 dark:text-gray-300 hover:text-[#206380] transition"
                 >
-                  <Phone className="w-6 h-6 text-[#206380]" />
-                  <span>+880 1234 567 890</span>
+                  <div className="p-3 bg-[#206380]/10 rounded-xl">
+                    <Phone className="w-5 h-5 text-[#206380]" />
+                  </div>
+                  <span className="text-base">+880 9638 111 777</span>
                 </a>
-                <div className="flex items-start gap-4 text-gray-700 dark:text-gray-300">
-                  <MapPin className="w-6 h-6 text-[#206380] mt-1" />
-                  <span>Dhaka, Bangladesh</span>
-                </div>
+
                 <div className="flex items-center gap-4 text-gray-700 dark:text-gray-300">
-                  <Clock className="w-6 h-6 text-[#206380]" />
-                  <span>Sat – Thu: 10:00 AM – 8:00 PM</span>
+                  <div className="p-3 bg-[#206380]/10 rounded-xl">
+                    <Clock className="w-5 h-5 text-[#206380]" />
+                  </div>
+                  <span className="text-base">
+                    শনি – বৃহস্পতি: সকাল ১০টা – রাত ৮টা
+                  </span>
                 </div>
               </div>
 
               {/* Social Links */}
-              <div className="pt-6 border-t border-gray-200 dark:border-gray-700">
-                <p className="text-lg font-medium mb-4 text-gray-900 dark:text-white">
-                  Follow Us
+              <div className="mt-8 pt-7 border-t border-gray-200 dark:border-gray-700">
+                <p className="text-base font-semibold mb-4 text-gray-900 dark:text-white">
+                  আমাদের ফলো করুন
                 </p>
-                <div className="flex gap-4">
-                  <a
-                    href="#"
-                    className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-[#206380] hover:text-white transition"
-                  >
-                    <Facebook size={20} />
-                  </a>
-                  <a
-                    href="#"
-                    className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-[#206380] hover:text-white transition"
-                  >
-                    <Youtube size={20} />
-                  </a>
-                  <a
-                    href="#"
-                    className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-[#206380] hover:text-white transition"
-                  >
-                    <Twitter size={20} />
-                  </a>
-                  <a
-                    href="#"
-                    className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-[#206380] hover:text-white transition"
-                  >
-                    <Linkedin size={20} />
-                  </a>
+                <div className="flex gap-3">
+                  {[Facebook, Youtube, Twitter, Linkedin].map((Icon, i) => (
+                    <a
+                      key={i}
+                      href="#"
+                      className="p-2.5 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-[#206380] hover:text-white transition"
+                    >
+                      <Icon size={18} />
+                    </a>
+                  ))}
                 </div>
               </div>
 
-              {/* WhatsApp CTA */}
+              {/* WhatsApp CTA - Pushed to bottom */}
               <a
-                href="https://wa.me/8801234567890"
+                href="https://wa.me/8809638111777"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white py-4 rounded-xl font-medium transition mt-6"
+                className="mt-auto w-full inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-3.5 px-5 rounded-xl font-medium text-base transition shadow-md"
               >
-                <MessageCircle size={22} />
-                Chat on WhatsApp
+                <MessageCircle size={20} />
+                হোয়াটসঅ্যাপে মেসেজ করুন
                 <ChevronRight size={18} />
               </a>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
 
-          {/* Contact Form */}
+          {/* Right: Contact Form */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
             className="lg:col-span-2"
           >
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12">
-              <h3 className="text-3xl font-semibold mb-8 text-gray-900 dark:text-white">
-                Send Us a Message
+            <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl p-8 md:p-10 border border-gray-200 dark:border-gray-700">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-7">
+                আমাদের একটি বার্তা পাঠান
               </h3>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label
-                      htmlFor="name"
-                      className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                    >
-                      Full Name <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      id="name"
-                      name="name"
-                      type="text"
-                      required
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="Your full name"
-                      className="w-full px-5 py-4 rounded-xl border border-gray-300 dark:border-gray-600 bg-transparent focus:ring-4 focus:ring-[#206380]/30 focus:border-[#206380] outline-none transition"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                    >
-                      Email Address <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="you@example.com"
-                      className="w-full px-5 py-4 rounded-xl border border-gray-300 dark:border-gray-600 bg-transparent focus:ring-4 focus:ring-[#206380]/30 focus:border-[#206380] outline-none transition"
-                    />
-                  </div>
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="আপনার পুরো নাম *"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="w-full px-5 py-3.5 rounded-xl border border-gray-300 dark:border-gray-600 focus:border-[#206380] focus:ring-4 focus:ring-[#206380]/20 transition text-base"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="আপনার ইমেইল *"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full px-5 py-3.5 rounded-xl border border-gray-300 dark:border-gray-600 focus:border-[#206380] focus:ring-4 focus:ring-[#206380]/20 transition text-base"
+                  />
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label
-                      htmlFor="phone"
-                      className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                    >
-                      Phone Number
-                    </label>
-                    <input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      placeholder="+880 ..."
-                      className="w-full px-5 py-4 rounded-xl border border-gray-300 dark:border-gray-600 bg-transparent focus:ring-4 focus:ring-[#206380]/30 focus:border-[#206380] outline-none transition"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="subject"
-                      className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                    >
-                      Subject <span className="text-red-500">*</span>
-                    </label>
-                    <select
-                      id="subject"
-                      name="subject"
-                      required
-                      value={formData.subject}
-                      onChange={handleChange}
-                      className="w-full px-5 py-4 rounded-xl border border-gray-300 dark:border-gray-600 bg-transparent focus:ring-4 focus:ring-[#206380]/30 focus:border-[#206380] outline-none transition"
-                    >
-                      <option value="">Select a subject</option>
-                      <option>Course Information</option>
-                      <option>Admission & Enrollment</option>
-                      <option>Technical Support</option>
-                      <option>Payment & Billing</option>
-                      <option>General Inquiry</option>
-                      <option>Partnership Opportunities</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                  >
-                    Your Message <span className="text-red-500">*</span>
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={6}
-                    required
-                    value={formData.message}
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="ফোন নম্বর (ঐচ্ছিক)"
+                    value={formData.phone}
                     onChange={handleChange}
-                    placeholder="Tell us how we can help you..."
-                    className="w-full px-5 py-4 rounded-xl border border-gray-300 dark:border-gray-600 bg-transparent focus:ring-4 focus:ring-[#206380]/30 focus:border-[#206380] outline-none transition resize-none"
+                    className="w-full px-5 py-3.5 rounded-xl border border-gray-300 dark:border-gray-600 focus:border-[#206380] focus:ring-4 focus:ring-[#206380]/20 transition text-base"
                   />
+                  <select
+                    name="subject"
+                    required
+                    value={formData.subject}
+                    onChange={handleChange}
+                    className="w-full px-5 py-3.5 rounded-xl border border-gray-300 dark:border-gray-600 focus:border-[#206380] focus:ring-4 focus:ring-[#206380]/20 transition text-base"
+                  >
+                    <option value="">বিষয় নির্বাচন করুন *</option>
+                    <option>কোর্স সম্পর্কিত তথ্য</option>
+                    <option>ভর্তি ও নিবন্ধন</option>
+                    <option>টেকনিক্যাল সাপোর্ট</option>
+                    <option>পেমেন্ট ও বিলিং</option>
+                    <option>সাধারণ জিজ্ঞাসা</option>
+                    <option>পার্টনারশিপ সুযোগ</option>
+                  </select>
                 </div>
+
+                <textarea
+                  name="message"
+                  rows={5}
+                  required
+                  placeholder="আপনার বার্তা লিখুন... *"
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="w-full px-5 py-4 rounded-xl border border-gray-300 dark:border-gray-600 focus:border-[#206380] focus:ring-4 focus:ring-[#206380]/20 transition resize-none text-base"
+                />
 
                 <button
                   type="submit"
                   disabled={loading}
-                  className="cursor-pointer w-full flex items-center justify-center gap-3 bg-[#206380] hover:bg-[#1a4f66] disabled:opacity-70 text-white py-5 rounded-xl font-semibold text-lg transition shadow-lg"
+                  className="w-full flex items-center justify-center gap-3 bg-[#206380] hover:bg-[#185060] disabled:opacity-70 disabled:cursor-not-allowed text-white py-4 rounded-xl font-bold text-base transition shadow-lg"
                 >
                   {loading ? (
                     <>
-                      <Loader2 className="animate-spin" size={24} />
-                      Sending Message...
+                      <Loader2 className="animate-spin" size={22} />
+                      বার্তা পাঠানো হচ্ছে...
                     </>
                   ) : success ? (
                     <>
-                      <CheckCircle size={24} />
-                      Message Sent Successfully!
+                      <CheckCircle size={22} />
+                      বার্তা সফলভাবে পাঠানো হয়েছে!
                     </>
                   ) : (
                     <>
-                      <Send size={24} />
-                      Send Message
+                      <Send size={22} />
+                      বার্তা পাঠান
                     </>
                   )}
                 </button>
 
                 {success && (
                   <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    className="text-center text-green-600 font-medium"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="text-center text-green-600 dark:text-green-400 font-medium text-base"
                   >
-                    Thank you! We'll get back to you soon.
+                    ধন্যবাদ! আমরা শীঘ্রই আপনার সাথে যোগাযোগ করব ইন শা আল্লাহ।
                   </motion.p>
                 )}
               </form>
@@ -353,56 +301,92 @@ export default function ContactPageAOI() {
           </motion.div>
         </div>
 
-        {/* FAQ */}
-        <div className=" space-y-6 max-w-4xl mx-auto">
-          {faqs.map((faq, index) => (
-            <div key={index} className="border rounded-xl">
-              <button
-                onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                className="cursor-pointer w-full px-6 py-5 flex justify-between"
-              >
-                {faq.question}
-                <ChevronDown
-                  className={openFaq === index ? "rotate-180" : ""}
-                />
-              </button>
-              {openFaq === index && (
-                <div className="border-t px-6 py-5">{faq.answer}</div>
-              )}
-            </div>
+        {/* Quick Support Cards - Smaller */}
+        <div className="grid grid-cols-2 gap-4">
+          {[
+            {
+              icon: HeadphonesIcon,
+              title: "লাইভ সাপোর্ট",
+              desc: "তাৎক্ষণিক সহায়তা",
+            },
+            {
+              icon: BookOpen,
+              title: "হেল্প সেন্টার",
+              desc: "গাইড ও টিউটোরিয়াল",
+            },
+            {
+              icon: Users,
+              title: "কমিউনিটি ফোরাম",
+              desc: "শিক্ষার্থীদের সাথে আলোচনা",
+            },
+            {
+              icon: Shield,
+              title: "নিরাপদ পেমেন্ট",
+              desc: "সব লেনদেন সুরক্ষিত",
+            },
+          ].map((item, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="bg-gradient-to-br from-[#206380]/5 to-[#206380]/10 dark:from-[#206380]/20 dark:to-[#206380]/30 rounded-2xl p-5 text-center border border-[#206380]/20"
+            >
+              <item.icon className="w-8 h-8 text-[#206380] mx-auto mb-2" />
+              <h4 className="text-sm font-semibold text-gray-900 dark:text-white">
+                {item.title}
+              </h4>
+              <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">
+                {item.desc}
+              </p>
+            </motion.div>
           ))}
         </div>
 
-        {/* Map Section */}
+        {/* FAQ Section - Compact */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-700"
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="max-w-5xl mx-auto"
         >
-          <div className="relative">
-            <iframe
-              title="An-Nahdah Online Institute Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.82240311352!2d90.27923973934314!3d23.78075328819939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1735680000000!5m2!1sen!2sbd"
-              width="100%"
-              height="500"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="w-full"
-            />
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-8 text-white">
-              <div className="flex items-center gap-3">
-                <Globe size={28} />
-                <div>
-                  <p className="text-2xl font-bold">Visit Us in Dhaka</p>
-                  <p className="opacity-90">
-                    An-Nahdah Online Institute Headquarters
-                  </p>
-                </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-10">
+            সাধারণ প্রশ্নোত্তর (FAQ)
+          </h2>
+
+          <div className="space-y-3">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden"
+              >
+                <button
+                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                  className="w-full px-6 py-4 flex justify-between items-center text-right text-base font-medium text-gray-900 dark:text-white hover:bg-[#206380]/5 transition"
+                >
+                  <span>{faq.question}</span>
+                  <ChevronDown
+                    size={22}
+                    className={`text-[#206380] transition-transform ${
+                      openFaq === index ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                {openFaq === index && (
+                  <motion.div
+                    initial={{ height: 0 }}
+                    animate={{ height: "auto" }}
+                    exit={{ height: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="px-6 pb-5 text-gray-600 dark:text-gray-300 text-base leading-relaxed"
+                  >
+                    {faq.answer}
+                  </motion.div>
+                )}
               </div>
-            </div>
+            ))}
           </div>
         </motion.div>
       </div>
