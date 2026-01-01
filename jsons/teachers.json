@@ -1,42 +1,48 @@
 [
   {
     "id": "1",
-    "name": "Dr. Mohammad Imran",
-    "title": "Associate Professor of Hadith",
-    "tagline": "Empowering minds in Islamic Studies",
-    "department": "Islamic Studies",
-    "profileImage": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800",
+    "name": "ড. মুহাম্মদ ইমরান",
+    "title": "সহযোগী অধ্যাপক — হাদিস",
+    "tagline": "ইসলামী শিক্ষায় মেধা বিকাশ",
+    "department": "ইসলামী স্টাডিজ",
+    "profileImage": "https://images.unsplash.com/photo-1633279305915-3760f40ae70d?w=500&auto=format&fit=crop&q=60",
     "email": "imran@example.edu",
     "phone": "+1 (555) 000-0000",
     "stats": { "students": 500, "courses": 3, "experience": 22 },
     "rating": 4.9,
     "years": 22,
-    "about": "Dr. Mohammad Imran has over two decades of experience teaching Hadith, Tafsir and classical Arabic. He supervises postgraduate research, publishes on hadith methodology, and runs community mentorship programmes focused on applied scholarship and student development.",
-    "bio": "20+ years teaching Hadith, Tafsir, and classical Arabic. Passionate about student mentorship and research. Supervises MA theses and regularly gives public seminars on hadith authentication.",
+    "about": "ড. মুহাম্মদ ইমরান হাদিস, তাফসির এবং ক্লাসিক্যাল আরবি শিক্ষায় দুই দশকের বেশি অভিজ্ঞ। তিনি স্নাতকোত্তর গবেষণা তত্ত্বাবধান করেন, হাদিস পদ্ধতিবিদ্যা নিয়ে গবেষণা প্রকাশ করেন এবং শিক্ষার্থী উন্নয়নমূলক কমিউনিটি মেন্টরশিপ পরিচালনা করেন।",
+    "bio": "হাদিস, তাফসির ও ক্লাসিক্যাল আরবিতে ২০+ বছরের অভিজ্ঞতা। শিক্ষার্থী মেন্টরশিপ ও গবেষণায় গভীর আগ্রহী। এমএ থিসিস তত্ত্বাবধান করেন এবং নিয়মিত হাদিস যাচাই বিষয়ে সেমিনার দেন।",
     "philosophy": {
-      "title": "Islamic Studies Teaching Philosophy",
-      "content": "I believe education in Islamic Studies should focus on:\n• Accessibility First: making knowledge available to all\n• Practical Application: real-world implementation of skills\n• Continuous Innovation: keeping up with latest research and methods\n• Student-Centric Design: prioritizing student engagement and success"
+      "title": "ইসলামী স্টাডিজ শিক্ষাদর্শন",
+      "content": "আমি বিশ্বাস করি ইসলামী স্টাডিজ শিক্ষার মূল ভিত্তি হওয়া উচিত:\n• সবার জন্য সহজলভ্য জ্ঞান\n• বাস্তব জীবনে প্রয়োগযোগ্য শিক্ষা\n• ধারাবাহিক গবেষণা ও উদ্ভাবন\n• শিক্ষার্থী-কেন্দ্রিক পাঠদান"
     },
-    "specialties": ["Ṣaḥīḥ al-Bukhārī", "Tafsir", "Arabic Grammar"],
+    "specialties": ["সহিহ আল-বুখারি", "তাফসির", "আরবি ব্যাকরণ"],
     "credentials": [
-      { "title": "PhD in Hadith Studies", "institute": "Al-Azhar University" },
-      { "title": "M.A. Tafsir & Exegesis", "institute": "Cairo University" }
+      {
+        "title": "হাদিস স্টাডিজে পিএইচডি",
+        "institute": "আল-আজহার বিশ্ববিদ্যালয়"
+      },
+      {
+        "title": "তাফসির ও ব্যাখ্যায় এমএ",
+        "institute": "কায়রো বিশ্ববিদ্যালয়"
+      }
     ],
     "courses": [
       {
-        "title": "Ṣaḥīḥ al-Bukhārī",
+        "title": "সহিহ আল-বুখারি",
         "rating": 4.9,
         "students": 120,
         "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
       },
       {
-        "title": "Tafsir",
+        "title": "তাফসির",
         "rating": 4.9,
         "students": 100,
         "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
       },
       {
-        "title": "Arabic Grammar",
+        "title": "আরবি ব্যাকরণ",
         "rating": 4.9,
         "students": 80,
         "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
@@ -44,297 +50,294 @@
     ],
     "reviews": [
       {
-        "name": "Ali H.",
+        "name": "আলী এইচ.",
         "rating": 5,
-        "comment": "Excellent instructor, very clear and engaging!"
+        "comment": "অসাধারণ শিক্ষক, খুব পরিষ্কারভাবে বোঝান।"
       },
       {
-        "name": "Fatima S.",
+        "name": "ফাতিমা এস.",
         "rating": 4.9,
-        "comment": "Learned so much, highly recommended."
+        "comment": "খুবই উপকারী কোর্স, জোরালোভাবে সুপারিশ করি।"
       }
     ],
     "social": { "linkedin": "#", "twitter": "#", "website": "#" }
   },
+
   {
     "id": "2",
-    "name": "Ustadhah Ayesha Rahman",
-    "title": "Senior Lecturer — Arabic Language",
-    "tagline": "Empowering minds in Languages",
-    "department": "Languages",
-    "profileImage": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800",
+    "name": "উস্তাযাহ আইশাহ রহমান",
+    "title": "সিনিয়র লেকচারার — আরবি ভাষা",
+    "tagline": "ভাষা শিক্ষায় মেধা বিকাশ",
+    "department": "ভাষা",
+    "profileImage": "https://images.unsplash.com/photo-1661871853540-e512a4b4bec6?w=500&auto=format&fit=crop&q=60",
     "email": "ayesha@example.edu",
     "phone": "+1 (555) 000-0000",
     "stats": { "students": 400, "courses": 3, "experience": 12 },
     "rating": 4.8,
     "years": 12,
-    "about": "Ustadhah Ayesha specializes in Arabic morphology (sarf) and syntax (nahw) with extensive experience designing adult reading and fluency programmes. Her classes emphasize reading practice, communicative drills and carefully scaffolded grammar exercises.",
-    "bio": "Specialist in Arabic morphology and pedagogy. Loves designing interactive reading courses for adults. Has developed modular curriculum for intermediate-to-advanced learners and leads teacher-training workshops.",
+    "about": "উস্তাযাহ আইশাহ আরবি নাহু ও সারফে বিশেষজ্ঞ। তিনি প্রাপ্তবয়স্কদের জন্য পাঠাভ্যাস ও সাবলীলতা বৃদ্ধিমূলক কোর্স ডিজাইন করেছেন।",
+    "bio": "আরবি শব্দতত্ত্ব ও শিক্ষাপদ্ধতিতে দক্ষ। ইন্টারেক্টিভ রিডিং কোর্স তৈরি করতে ভালোবাসেন।",
     "philosophy": {
-      "title": "Languages Teaching Philosophy",
-      "content": "I believe education in Languages should focus on:\n• Accessibility First: making knowledge available to all\n• Practical Application: real-world implementation of skills\n• Continuous Innovation: keeping up with latest research and methods\n• Student-Centric Design: prioritizing student engagement and success"
+      "title": "ভাষা শিক্ষাদর্শন",
+      "content": "ভাষা শিক্ষা হওয়া উচিত বাস্তবভিত্তিক, অংশগ্রহণমূলক এবং শিক্ষার্থী-কেন্দ্রিক।"
     },
-    "specialties": ["Nahw (Grammar)", "Sarf (Morphology)", "Reading Practice"],
+    "specialties": ["নাহু", "সারফ", "রিডিং প্র্যাকটিস"],
     "credentials": [
       {
-        "title": "M.A. Arabic Pedagogy",
-        "institute": "International Islamic University"
+        "title": "আরবি শিক্ষায় এমএ",
+        "institute": "ইন্টারন্যাশনাল ইসলামিক ইউনিভার্সিটি"
       },
-      {
-        "title": "Certified Language Trainer",
-        "institute": "British Council (Train-the-Trainer)"
-      }
+      { "title": "সার্টিফাইড ভাষা প্রশিক্ষক", "institute": "ব্রিটিশ কাউন্সিল" }
     ],
     "courses": [
       {
-        "title": "Nahw (Grammar)",
+        "title": "নাহু",
         "rating": 4.8,
         "students": 120,
-        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
+        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1"
       },
       {
-        "title": "Sarf (Morphology)",
+        "title": "সারফ",
         "rating": 4.8,
         "students": 100,
-        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
+        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1"
       },
       {
-        "title": "Reading Practice",
+        "title": "রিডিং প্র্যাকটিস",
         "rating": 4.8,
         "students": 80,
-        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
+        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1"
       }
     ],
     "reviews": [
       {
-        "name": "Aisha R.",
+        "name": "আইশাহ আর.",
         "rating": 4.9,
-        "comment": "Fantastic teaching methods!"
+        "comment": "শিক্ষাদান পদ্ধতি অসাধারণ।"
       },
-      {
-        "name": "Hassan K.",
-        "rating": 4.8,
-        "comment": "Very patient and knowledgeable."
-      }
+      { "name": "হাসান কে.", "rating": 4.8, "comment": "খুব ধৈর্যশীল শিক্ষক।" }
     ],
     "social": { "linkedin": "#", "twitter": "#", "website": "#" }
   },
+
   {
     "id": "3",
-    "name": "Prof. Khalid Hasan",
-    "title": "Professor — Fiqh & Usul",
-    "tagline": "Empowering minds in Jurisprudence",
-    "department": "Jurisprudence",
-    "profileImage": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800",
+    "name": "ড. মুহাম্মাদ আল ফারিস",
+    "title": "প্রফেসর — ফিকহ ও উসূল",
+    "tagline": "ইসলামী আইনশাস্ত্রে মেধা বিকাশ",
+    "department": "জুরিসপ্রুডেন্স",
+    "profileImage": "https://plus.unsplash.com/premium_photo-1677618295752-d7473d7740e5?w=500&auto=format&fit=crop&q=60",
     "email": "khalid@example.edu",
     "phone": "+1 (555) 000-0000",
     "stats": { "students": 600, "courses": 3, "experience": 30 },
     "rating": 5.0,
     "years": 30,
-    "about": "Professor Khalid is a noted researcher in comparative fiqh and usul al-fiqh. He directs community legal education initiatives and publishes comparative jurisprudence research that bridges classical doctrine with contemporary issues.",
-    "bio": "Researcher of comparative fiqh with deep interest in community-led legal education. Supervises research projects that examine modern applications of classical rulings and comparative methodologies.",
+    "about": "প্রফেসর খালিদ তুলনামূলক ফিকহ ও উসূলুল ফিকহের খ্যাতনামা গবেষক।",
+    "bio": "কমিউনিটি-ভিত্তিক আইন শিক্ষায় আগ্রহী গবেষক।",
     "philosophy": {
-      "title": "Jurisprudence Teaching Philosophy",
-      "content": "I believe education in Jurisprudence should focus on:\n• Accessibility First: making knowledge available to all\n• Practical Application: real-world implementation of skills\n• Continuous Innovation: keeping up with latest research and methods\n• Student-Centric Design: prioritizing student engagement and success"
+      "title": "ফিকহ শিক্ষাদর্শন",
+      "content": "ক্লাসিক্যাল জ্ঞানকে আধুনিক বাস্তবতার সাথে সংযুক্ত করাই আমার লক্ষ্য।"
     },
-    "specialties": ["Fiqh", "Usul al-Fiqh", "Comparative Jurisprudence"],
+    "specialties": ["ফিকহ", "উসূলুল ফিকহ", "তুলনামূলক ফিকহ"],
     "credentials": [
       {
-        "title": "PhD in Islamic Jurisprudence",
-        "institute": "University of Medina"
+        "title": "ইসলামী আইনশাস্ত্রে পিএইচডি",
+        "institute": "মদিনা বিশ্ববিদ্যালয়"
       },
       {
-        "title": "Visiting Scholar",
-        "institute": "Oxford Centre for Islamic Studies"
+        "title": "ভিজিটিং স্কলার",
+        "institute": "অক্সফোর্ড সেন্টার ফর ইসলামিক স্টাডিজ"
       }
     ],
     "courses": [
       {
-        "title": "Fiqh",
+        "title": "ফিকহ",
         "rating": 5.0,
         "students": 200,
-        "image": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
+        "image": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c"
       },
       {
-        "title": "Usul al-Fiqh",
+        "title": "উসূলুল ফিকহ",
         "rating": 5.0,
         "students": 180,
-        "image": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
+        "image": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c"
       },
       {
-        "title": "Comparative Jurisprudence",
+        "title": "তুলনামূলক ফিকহ",
         "rating": 5.0,
         "students": 150,
-        "image": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
+        "image": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c"
       }
     ],
     "reviews": [
-      { "name": "Omar L.", "rating": 5, "comment": "Outstanding expertise!" },
+      { "name": "ওমর এল.", "rating": 5, "comment": "অসাধারণ জ্ঞান!" },
       {
-        "name": "Sara M.",
+        "name": "সারা এম.",
         "rating": 4.9,
-        "comment": "Highly insightful lectures."
+        "comment": "খুবই অন্তর্দৃষ্টিপূর্ণ লেকচার।"
       }
     ],
     "social": { "linkedin": "#", "twitter": "#", "website": "#" }
   },
   {
     "id": "4",
-    "name": "Dr. Noor Fatima",
-    "title": "Lecturer — Islamic History",
-    "tagline": "Empowering minds in History",
-    "department": "History",
-    "profileImage": "https://images.unsplash.com/photo-1531123414780-fb0d0b3b8b5a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800",
+    "name": "ড. নূর ফাতিমা",
+    "title": "লেকচারার — ইসলামী ইতিহাস",
+    "tagline": "ইতিহাসে মেধা বিকাশ",
+    "department": "ইতিহাস",
+    "profileImage": "https://images.unsplash.com/photo-1718748042706-4fa1292adc2e?w=500&auto=format&fit=crop&q=60",
     "email": "noor@example.edu",
     "phone": "+1 (555) 000-0000",
     "stats": { "students": 350, "courses": 3, "experience": 9 },
     "rating": 4.7,
     "years": 9,
-    "about": "Dr. Noor Fatima researches early Islamic civilization and highlights female scholarship across Islamic history. She authors books and organizes research seminars aimed at bringing historical narratives into contemporary study.",
-    "bio": "Author and educator focusing on early Islamic civilization and female scholarship. Teaches source criticism, historiography and research methods tailored for undergraduate and postgraduate students.",
+    "about": "ড. নূর ফাতিমা প্রাথমিক ইসলামী সভ্যতা নিয়ে গবেষণা করেন এবং ইসলামী ইতিহাসে নারীদের অবদানের ওপর জোর দেন। তিনি বই রচনা করেন এবং গবেষণা সেমিনার আয়োজন করেন।",
+    "bio": "প্রাথমিক ইসলামী সভ্যতা ও নারীর শিক্ষাবৃত্তিতে উৎসাহী লেখক ও শিক্ষক। আন্ডারগ্র্যাজুয়েট ও পোস্টগ্র্যাজুয়েট শিক্ষার্থীদের জন্য উৎসর্গকৃত।",
     "philosophy": {
-      "title": "History Teaching Philosophy",
-      "content": "I believe education in History should focus on:\n• Accessibility First: making knowledge available to all\n• Practical Application: real-world implementation of skills\n• Continuous Innovation: keeping up with latest research and methods\n• Student-Centric Design: prioritizing student engagement and success"
+      "title": "ইতিহাস শিক্ষাদর্শন",
+      "content": "ইতিহাস শিক্ষা হওয়া উচিত:\n• সকলের জন্য সহজলভ্য\n• বাস্তব জীবনে প্রয়োগযোগ্য\n• ধারাবাহিক গবেষণায় উদ্ভাবনী\n• শিক্ষার্থী-কেন্দ্রিক পাঠদান"
     },
-    "specialties": ["Islamic History", "Biographies", "Research Methods"],
+    "specialties": ["ইসলামী ইতিহাস", "জীবনী", "গবেষণা পদ্ধতি"],
     "credentials": [
       {
-        "title": "PhD in Islamic History",
-        "institute": "University of Cambridge"
+        "title": "ইসলামী ইতিহাসে পিএইচডি",
+        "institute": "কেমব্রিজ বিশ্ববিদ্যালয়"
       },
-      { "title": "Published Author", "institute": "Various Academic Presses" }
+      { "title": "প্রকাশিত লেখক", "institute": "বিভিন্ন একাডেমিক প্রকাশনা" }
     ],
     "courses": [
       {
-        "title": "Islamic History",
+        "title": "ইসলামী ইতিহাস",
         "rating": 4.7,
         "students": 100,
         "image": "https://images.unsplash.com/photo-1531123414780-fb0d0b3b8b5a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
       },
       {
-        "title": "Biographies",
+        "title": "জীবনী",
         "rating": 4.7,
         "students": 80,
         "image": "https://images.unsplash.com/photo-1531123414780-fb0d0b3b8b5a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
       },
       {
-        "title": "Research Methods",
+        "title": "গবেষণা পদ্ধতি",
         "rating": 4.7,
         "students": 70,
         "image": "https://images.unsplash.com/photo-1531123414780-fb0d0b3b8b5a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
       }
     ],
     "reviews": [
-      { "name": "Leila N.", "rating": 4.8, "comment": "Very inspiring!" },
       {
-        "name": "Yusuf A.",
-        "rating": 4.7,
-        "comment": "Learned a lot from her."
-      }
+        "name": "লাইলা এন.",
+        "rating": 4.8,
+        "comment": "খুবই অনুপ্রেরণাদায়ক!"
+      },
+      { "name": "ইউসুফ এ.", "rating": 4.7, "comment": "তার থেকে অনেক শিখলাম।" }
     ],
     "social": { "linkedin": "#", "twitter": "#", "website": "#" }
   },
+
   {
     "id": "5",
-    "name": "Sheikh Abdullah Al-Rashid",
-    "title": "Senior Instructor — Qur'an Memorization",
-    "tagline": "Empowering minds in Islamic Studies",
-    "department": "Islamic Studies",
-    "profileImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800",
+    "name": "শেখ আবদুল্লাহ আল-রশিদ",
+    "title": "সিনিয়র ইনস্ট্রাক্টর — কুরআন হিফজ",
+    "tagline": "ইসলামী শিক্ষায় মেধা বিকাশ",
+    "department": "ইসলামী স্টাডিজ",
+    "profileImage": "https://images.unsplash.com/photo-1560601575-29dc7d25ff3b?w=500&auto=format&fit=crop&q=60",
     "email": "abdullah@example.edu",
     "phone": "+1 (555) 000-0000",
     "stats": { "students": 400, "courses": 3, "experience": 15 },
     "rating": 4.9,
     "years": 15,
-    "about": "Sheikh Abdullah specializes in tajweed and memorization pedagogy. He has trained many huffaz using incremental memorization techniques and focuses on preserving correct recitation and melodic rhythm.",
-    "bio": "Specializing in Quranic memorization techniques and classical Arabic with 15 years experience. Runs memorization cohorts and tajweed clinics for learners of all ages.",
+    "about": "শেখ আবদুল্লাহ তাজওয়ীদ ও হিফজ পদ্ধতিতে দক্ষ। তিনি বহু হাফেজ প্রশিক্ষণ দিয়েছেন এবং সঠিক তেলাওয়াত ও ধ্বনিমূলক ছন্দ রক্ষা করাকে গুরুত্ব দেন।",
+    "bio": "ক্লাসিকাল আরবি এবং কুরআন হিফজে ১৫ বছরের অভিজ্ঞতা। হিফজ ক্লিনিক ও কোহোর্ট পরিচালনা করেন।",
     "philosophy": {
-      "title": "Qur'an Memorization Philosophy",
-      "content": "I believe education in Islamic Studies should focus on:\n• Accessibility First: making knowledge available to all\n• Practical Application: real-world implementation of skills\n• Continuous Innovation: keeping up with latest research and methods\n• Student-Centric Design: prioritizing student engagement and success"
+      "title": "কুরআন হিফজ শিক্ষাদর্শন",
+      "content": "শিক্ষা হওয়া উচিত:\n• সকলের জন্য সহজলভ্য\n• বাস্তব জীবনে প্রয়োগযোগ্য\n• ধারাবাহিক উদ্ভাবন\n• শিক্ষার্থী-কেন্দ্রিক পাঠদান"
     },
-    "specialties": ["Qur'an", "Tajweed", "Memorization Techniques"],
+    "specialties": ["কুরআন", "তাজওয়ীদ", "হিফজ কৌশল"],
     "credentials": [
-      { "title": "Ijazah in Qira'at", "institute": "Traditional Chain" },
-      { "title": "Certificate in Pedagogy", "institute": "Local Institute" }
+      { "title": "ক্বিরাআত ইজাযাহ", "institute": "পরম্পরাগত চেইন" },
+      { "title": "পেডাগজি সার্টিফিকেট", "institute": "স্থানীয় প্রতিষ্ঠান" }
     ],
     "courses": [
       {
-        "title": "Qur'an",
+        "title": "কুরআন",
         "rating": 4.9,
         "students": 150,
         "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
       },
       {
-        "title": "Tajweed",
+        "title": "তাজওয়ীদ",
         "rating": 4.9,
         "students": 130,
         "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
       },
       {
-        "title": "Memorization Techniques",
+        "title": "হিফজ কৌশল",
         "rating": 4.9,
         "students": 120,
         "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
       }
     ],
     "reviews": [
-      { "name": "Hadi M.", "rating": 5, "comment": "Exceptional teacher!" },
-      { "name": "Amira S.", "rating": 4.9, "comment": "Highly recommended!" }
+      { "name": "হাদি এম.", "rating": 5, "comment": "অসাধারণ শিক্ষক!" },
+      { "name": "আমিরা এস.", "rating": 4.9, "comment": "অত্যন্ত সুপারিশযোগ্য!" }
     ],
     "social": { "linkedin": "#", "twitter": "#", "website": "#" }
   },
+
   {
     "id": "6",
-    "name": "Dr. Hana Al-Mansouri",
-    "title": "Lecturer — Islamic Law",
-    "tagline": "Empowering minds in Jurisprudence",
-    "department": "Jurisprudence",
-    "profileImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800",
+    "name": "ড. হানা আল-মানসুরি",
+    "title": "লেকচারার — ইসলামী আইন",
+    "tagline": "জুরিসপ্রুডেন্সে মেধা বিকাশ",
+    "department": "জুরিসপ্রুডেন্স",
+    "profileImage": "https://images.unsplash.com/photo-1716505344687-d449b4fde8ba?w=500&auto=format&fit=crop&q=60",
     "email": "hana@example.edu",
     "phone": "+1 (555) 000-0000",
     "stats": { "students": 300, "courses": 3, "experience": 11 },
     "rating": 4.8,
     "years": 11,
-    "about": "Dr. Hana researches contemporary fiqh and legal applications, focusing on adapting classical rulings to modern contexts. She teaches case-based courses that prepare students to apply jurisprudence principles practically.",
-    "bio": "Expert in contemporary Islamic law applications and modern fiqh challenges. Teaches applied fiqh, regulatory frameworks and conducts workshops for legal practitioners.",
+    "about": "ড. হানা সমসাময়িক ফিকহ ও আইনের প্রয়োগ নিয়ে গবেষণা করেন। তিনি ক্লাসে কেস স্টাডি এবং প্রায়োগিক শিক্ষা প্রদান করেন।",
+    "bio": "সমসাময়িক ইসলামী আইন এবং আধুনিক ফিকহ চ্যালেঞ্জে বিশেষজ্ঞ। প্রায়োগিক ফিকহ ও নীতি সম্পর্কিত কর্মশালা পরিচালনা করেন।",
     "philosophy": {
-      "title": "Islamic Law Teaching Philosophy",
-      "content": "I believe education in Jurisprudence should focus on:\n• Accessibility First: making knowledge available to all\n• Practical Application: real-world implementation of skills\n• Continuous Innovation: keeping up with latest research and methods\n• Student-Centric Design: prioritizing student engagement and success"
+      "title": "ইসলামী আইন শিক্ষাদর্শন",
+      "content": "শিক্ষা হওয়া উচিত:\n• সকলের জন্য সহজলভ্য\n• বাস্তব জীবনে প্রয়োগযোগ্য\n• ধারাবাহিক উদ্ভাবন\n• শিক্ষার্থী-কেন্দ্রিক পাঠদান"
     },
-    "specialties": ["Contemporary Fiqh", "Islamic Law", "Legal Applications"],
+    "specialties": ["সমসাময়িক ফিকহ", "ইসলামী আইন", "আইন প্রয়োগ"],
     "credentials": [
       {
-        "title": "PhD in Islamic Law",
-        "institute": "International Islamic University"
+        "title": "ইসলামী আইনে পিএইচডি",
+        "institute": "ইন্টারন্যাশনাল ইসলামিক ইউনিভার্সিটি"
       },
-      { "title": "Advisor — Legal Reform", "institute": "Policy Lab" }
+      { "title": "আইন সংস্কার উপদেষ্টা", "institute": "পলিসি ল্যাব" }
     ],
     "courses": [
       {
-        "title": "Contemporary Fiqh",
+        "title": "সমসাময়িক ফিকহ",
         "rating": 4.8,
         "students": 90,
         "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
       },
       {
-        "title": "Islamic Law",
+        "title": "ইসলামী আইন",
         "rating": 4.8,
         "students": 80,
         "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
       },
       {
-        "title": "Legal Applications",
+        "title": "আইন প্রয়োগ",
         "rating": 4.8,
         "students": 70,
         "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&w=800"
       }
     ],
     "reviews": [
-      { "name": "Khalid S.", "rating": 4.9, "comment": "Very knowledgeable!" },
+      { "name": "খালিদ এস.", "rating": 4.9, "comment": "খুবই জ্ঞানসম্পন্ন!" },
       {
-        "name": "Nadia T.",
+        "name": "নাদিয়া টি.",
         "rating": 4.8,
-        "comment": "Excellent explanations."
+        "comment": "ব্যাখ্যা খুব পরিষ্কার।"
       }
     ],
     "social": { "linkedin": "#", "twitter": "#", "website": "#" }
