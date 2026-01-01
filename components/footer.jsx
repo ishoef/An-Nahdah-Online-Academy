@@ -23,8 +23,8 @@ export default function Footer() {
   ====================== */
 
   const coursesLinks = [
-    { label: "ইসলামিক স্টাডিজ", href: "/courses/islamic-studies" },
-    { label: "কুরআনিক আরবী", href: "/courses/quranic-arabic" },
+    { label: "ইসলামিক স্টাডিজ", href: "/islamic-knowledge" },
+    { label: "কুরআনিক আরবী", href: "/skills" },
     { label: "তাজউইদ", href: "/courses/tajweed" },
     { label: "লাইফ স্কিলস", href: "/courses/life-skills" },
     { label: "সার্টিফিকেট", href: "/certificates" },
@@ -32,7 +32,7 @@ export default function Footer() {
 
   const instituteLinks = [
     { label: "আমাদের সম্পর্কে", href: "/about" },
-    { label: "আমাদের আলেমগণ", href: "/scholars" },
+    { label: "আমাদের শিক্ষকবৃন্দ", href: "/instructors" },
     { label: "যোগাযোগ", href: "/contact" },
     { label: "দান করুন", href: "/donate" },
     { label: "FAQ", href: "/faq" },

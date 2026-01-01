@@ -15,7 +15,7 @@ const navItems = [
   { name: "স্কিলস", href: "/skills" },
   { name: "কোর্সসমূহ", href: "/courses" },
   { name: "শিক্ষকবৃন্দ", href: "/instructors" },
-  { name: "বইসমূহ", href: "/books" },
+  // { name: "বইসমূহ", href: "/books" },
   { name: "যোগাযোগ", href: "/contact" },
 ];
 

@@ -353,39 +353,36 @@ export default function ContactPageAOI() {
           className="max-w-5xl mx-auto"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-10">
-            সাধারণ প্রশ্নোত্তর (FAQ)
+            শিক্ষার্থীদের <span className="text-nhd-700 dark:text-nhd-400">জিজ্ঞাসা</span>
           </h2>
 
-          <div className="space-y-3">
+          <div className="space-y-6">
             {faqs.map((faq, index) => (
-              <div
+              <motion.div
                 key={index}
-                className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden"
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4 }}
+                className="p-8 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-3xl shadow-lg hover:shadow-xl transition hover:-translate-y-1"
               >
-                <button
-                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                  className="w-full px-6 py-4 flex justify-between items-center text-right text-base font-medium text-gray-900 dark:text-white hover:bg-[#206380]/5 transition"
-                >
-                  <span>{faq.question}</span>
-                  <ChevronDown
-                    size={22}
-                    className={`text-[#206380] transition-transform ${
-                      openFaq === index ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-                {openFaq === index && (
-                  <motion.div
-                    initial={{ height: 0 }}
-                    animate={{ height: "auto" }}
-                    exit={{ height: 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="px-6 pb-5 text-gray-600 dark:text-gray-300 text-base leading-relaxed"
-                  >
-                    {faq.answer}
-                  </motion.div>
-                )}
-              </div>
+                {/* Header */}
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-semibold text-[#206380]">
+                    {faq.question}
+                  </h3>
+
+                  <div className="flex text-[#206380]">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                {/* Body */}
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base mb-5">
+                  {faq.answer}
+                </p>
+
+                {/* Footer Line */}
+                <div className="w-full h-[3px] rounded-full bg-[#206380]/80"></div>
+              </motion.div>
             ))}
           </div>
         </motion.div>
