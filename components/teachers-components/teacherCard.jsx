@@ -20,8 +20,8 @@ const TeacherCard = ({ instructor }) => {
       {/* Avatar */}
       <div className="flex justify-center">
         <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-[#206380]/20">
-          <Image
-            src={avatar || "/avatar-placeholder.png"}
+          <img
+            src="https://i.postimg.cc/QNFWys2W/vecteezy-profile-icon-design-vector-5544718.jpg"
             alt={name}
             fill
             className="object-cover"
