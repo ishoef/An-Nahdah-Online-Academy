@@ -30,7 +30,7 @@ const testimonials = [
 
 function MarqueeRow({ reverse }) {
   const duration = 60;
-
+  
   return (
     <div className="overflow-hidden w-full relative">
       <motion.div
@@ -86,9 +86,9 @@ export default function TestimonialsSlider() {
       <div className="max-w-7xl mx-auto text-center mb-12 px-4 sm:px-6 lg:px-8">
         <Title
           title1={"শিক্ষার্থীদের"}
-          title2={"সফলতার গল্প"}
+          title2={"মতামত"}
           subTitle={
-            "আমাদের শিক্ষার্থীিদের রিভিউ দেখুন এবং তাদের অভিজ্ঞতা শুনুন"
+            "আমাদের শিক্ষার্থীিদের মতামত দেখুন এবং তাদের অভিজ্ঞতা শুনুন"
           }
         />
       </div>

@@ -5,13 +5,12 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative flex flex-col justify-between overflow-hidden bg-[#0b5f78] text-white dark:bg-gray-900 dark:text-gray-100">
+    <section className="relative min-h-screen flex flex-col justify-between overflow-hidden bg-[#0b5f78] text-white dark:bg-gray-900 dark:text-gray-100">
       {/* Top Hero */}
-      <div className="relative z-10 mx-auto max-w-7xl px-6 py-20 md:py-24 flex flex-col-reverse md:flex-row gap-14 items-center">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-20 md:py-24 flex flex-col-reverse md:flex-row gap-14 items-center flex-1">
         {/* Left Content */}
         <div className="space-y-6 w-full lg:basis-2/3 text-center lg:text-left">
-          <h1 className="text-3xl font-bangla sm:text-4xl md:text-6xl  font-extrabold leading-tight">
-            {/* Master Islam & Modern */}
+          <h1 className="text-3xl font-bangla sm:text-4xl md:text-6xl font-extrabold leading-tight">
             পড়, তোমার প্রভুর নামে
             <br />
             <span className="text-nhd-300 dark:text-nhd-400">
@@ -41,10 +40,9 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Image & Badges */}
+        {/* Right Image */}
         <div className="hidden lg:block">
           <div className="relative w-full flex justify-center md:justify-end">
-            {/* Image */}
             <div className="relative w-[280px] sm:w-[360px] md:w-[420px] lg:w-[520px]">
               <Image
                 src="/images/hero.png"
@@ -55,47 +53,20 @@ export default function Hero() {
                 className="w-full h-auto drop-shadow-2xl rounded-2xl"
               />
             </div>
-
-            {/* Rating Card */}
-            <div className="absolute top-6 right-2 sm:top-10 sm:-right-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 text-xs sm:text-sm dark:bg-gray-800/60 dark:border-gray-600">
-              <p className="font-bold text-base sm:text-lg text-white dark:text-gray-100">
-                5.0 ⭐⭐⭐⭐⭐
-              </p>
-              <p className="text-white/80 dark:text-gray-400">
-                Trusted by users worldwide
-              </p>
-            </div>
-
-            {/* Quran Card */}
-            <div className="absolute bottom-6 right-2 sm:bottom-14 sm:-right-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 max-w-[260px] dark:bg-gray-800/60 dark:border-gray-600">
-              <div className="flex items-center gap-3">
-                <Image
-                  src="/images/quran-icon.png"
-                  alt="Quran"
-                  width={50}
-                  height={50}
-                />
-                <div>
-                  <p className="font-semibold text-sm text-white dark:text-gray-100">
-                    Pure, guided Qur'an education
-                  </p>
-                  <p className="text-xs text-white/70 dark:text-gray-400">
-                    Helping you connect deeply with the Book of Allah
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
 
-      {/* Bottom Stats Section */}
-      <div className="bg-[#b7e4f8] text-[#0b5f78] rounded-t-4xl dark:bg-gray-800 dark:text-gray-100">
+      {/* Bottom Stats Section (NOT fixed) */}
+      <div className="bg-[#b7e4f8] text-[#0b5f78] rounded-4xl dark:bg-gray-800 dark:text-gray-100">
         <div className="mx-auto max-w-7xl px-6 py-12 grid gap-8 sm:grid-cols-3 lg:grid-cols-5 items-start">
           {/* Text */}
           <div className="space-y-3 sm:col-span-3 lg:col-span-2 text-center lg:text-left">
             <h3 className="text-xl sm:text-2xl dark:text-white font-bold leading-tight">
-              <span className="text-nhd-700 dark:text-nhd-400">ইসলামী শিক্ষার</span> নির্ভরযোগ্য প্ল্যাটফর্ম
+              <span className="text-nhd-700 dark:text-nhd-400">
+                ইসলামী শিক্ষার
+              </span>{" "}
+              নির্ভরযোগ্য প্ল্যাটফর্ম
             </h3>
             <p className="text-sm leading-relaxed text-[#0b5f78]/80 dark:text-gray-400 max-w-md mx-auto lg:mx-0">
               একটি নির্ভরযোগ্য শিক্ষার স্থান যা আসল ইসলামী জ্ঞান প্রদান করে,
